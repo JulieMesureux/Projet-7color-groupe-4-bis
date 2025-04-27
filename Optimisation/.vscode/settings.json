@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "gamestate.h": "c",
+        "listes_chainees.h": "c",
+        "modif.h": "c",
+        "glouton.h": "c"
+    }
+}
