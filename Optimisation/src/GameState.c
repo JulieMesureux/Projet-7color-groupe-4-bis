@@ -99,8 +99,8 @@ int main(int argc, char** argv){
 	element* front_1 = NULL;
 	element* front_2 = NULL ;
 
-	GP4_b_insert_first(&front_1, 0, size-1) ;
-	GP4_b_insert_first(&front_2, size-1, 0) ;
+	GP4_b_insert_first(&front_1, size - 1, 0) ;
+	GP4_b_insert_first(&front_2, 0, size - 1) ;
 
 	// MODE DE JEU
 

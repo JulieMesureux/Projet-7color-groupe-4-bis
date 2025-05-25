@@ -55,6 +55,8 @@ void GP4_b_copy_list(element* head, element** head_copy){
     element* a_copier = head ;
     element* copie = NULL ;
     element* new_element = NULL;
+   /* if (a_copier == NULL)
+        *head_copy = NULL;*/
 
     //Copie des éléments un par un jusqu'au dernier
     while (a_copier != NULL){

@@ -1,0 +1,21 @@
+
+
+Sur le rapport : petit détail : y = partie entière ((i-x)/size)
+La seed ne change pas au cours du temps. Il s'agit juste d'une paramètre de la suite rand()
+En gros c'est le premier "terme" de la suite (On ne récupère à chaque fois qu'une partie du nombre utilisé dans la suite)
+
+Pour ton bug, je n'ai pas le temps de rentrer suffisamment dans ton esprit pour le corriger, comme il est sur une fonction bonus. Je verrai quand j'aurais un peu plus de temps.
+Par contre, je peux te dire qu'une piste à creuser c'est que lorsqu'il se produit, c'est parceque *front == NULL dans ton appel final à GP4_b_sup_if_not_front dans GP4_b_glouton
+Il est possible que ta liste chainée soit mal initialisée (je remarque au passage que 
+dans ta fonction de copie, tu ne fais rien lorsque ta liste à copier est à null, mais que ça ne suffit pas à résoudre le bug)
+
+En jouant à la version "opti", je constate que les emplacements de départs sont inversés (le joueur 1 s'étend à partir de la position du joueur 2, mais le reste de la partie est normale)
+Il y a donc un problème avec ton initialisation de ta liste chainée (GP4_b_insert_first est à l'envers)
+
+Un petit conseil : évite de trop dupliquer de code. Tu aurais typiquement pu faire une branche plutot que le dossier optimisation.
+Dans l'ensemble ton code est plutôt propre et clair, juste un petit détail sur le fonctionnement de rand()
+Tu peux aller sur le site suivant qui explique bien : 
+https://koor.fr/C/cstdlib/rand.wp
+
+Dans l'ensemble, c'est de l'excellent travail !
+Au plaisir de te recroiser à l'ens ! 

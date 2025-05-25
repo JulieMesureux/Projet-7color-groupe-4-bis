@@ -53,6 +53,14 @@ int GP4_b_est_une_frontiere(GameState* state, int x, int y){
 // Mise à jour la liste des frontières
 void GP4_b_sup_if_not_front(GameState* state, element** front){
 
+	if (front == NULL){
+		printf("error, front in null\n");
+		exit(0);
+	}
+	if (*front == NULL){
+		printf("error, front points null\n");
+		//exit(0);
+	}
 	element* tmp = *front ;
 	element* next_tmp = tmp -> next ;
 	
