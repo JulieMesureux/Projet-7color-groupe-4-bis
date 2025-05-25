@@ -10,6 +10,8 @@
 
 Color GP4_b_mixte(GameState* state, Color player){
 
+    //Il aurait été judicieux de 1) avoir des fonctions pour compter les frontières dans la fonction précédente et celle-ci
+    //également d'utiliser la fonction glouton.
     int frontiere[] = {0, 0, 0, 0, 0, 0, 0} ; // Nombre de cases à la frontière pour chaque couleur
     int nbr_case[] = {0, 0, 0, 0, 0, 0, 0} ;  // Nombre de cases totales du joueur
     int est_une_frontiere = 0 ;
